@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HTML Advanced Notes
+        <title>HTML Advanced Notes </title>
             <meta charset="UTF-8">
-        </title>
+            <style>
+                /* Cascading style sheet
+                1. Selector => says what to change
+                2. Declaration
+                    a. Property => what about the element to change
+                    b. Value => How to change it */
+                    body{
+                        color:#546a76;
+                        background-color:#fad4d8;
+                        border: solid 7px #b4ceb3;
+                    }
+                    h1{
+                        text-align:center
+                    }
+                    #even{
+                        color:rgb(239, 236, 179);
+                        text-decoration:underline;
+                    }
+                    .lists{
+                        width: 50%;
+                        background-color:white;
+                        border-radius: 5px;
+                        font-size: 2rem;
+                    }
+            </style>
     </head>
      <body>
         <h1>HTML Advences Notes</h1>
+        <div class="lists">
         <h3>Lists: </h3>
         <ol> 
             <li>Alex</li>
-            <li>Katie</li>
+            <li id="even">Katie</li>
             <li>Andrew</li>
-            <li>Vienna</li>
+            <li id="even">Vienna</li>
         </ol>
         <ul>
             <li>apple</li>
-            <li>orange</li>
+            <li id="even">orange</li>
             <li>banana</li>
-            <li>peach</li>
+            <li id="even">peach</li>
         </ul>
         <dl>
             <dt>Fall</dt>
@@ -29,6 +54,7 @@
             <dd>Hanukkah</dd>
             <dd>New Years</dd>
         </dl>
+        </div>
         <h3>Attributes: </h3>
         <div>
          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Mount_Timpanogos_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Mount Timp" width="250px">
