@@ -23,12 +23,15 @@
                 padding: 5px;
             }
             #flex-wrapper{
-                display: flex;
+                display: none;
                 gap: 5px;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+            }
+            img{
+                width: 200px
             }
         </style>
         <head>
@@ -36,9 +39,10 @@
         </head>
         <body>
             <h1> Alignment notes</h1>
+            <img scr="link" alt "timp" id="timp">
             <div  id="grid-wrapper"> 
-                <div id="box">
-                    <p>box 1</p>
+                <div id="box"onmouseover="rotate">
+                    <p>id="text"</p>
                 </div>
                 <div id="box">
                     <p>box 2</p>
@@ -64,6 +68,34 @@
                     <p>box 4</p>
                 </div>
             </div>
-            <button> Click Me!</button>
+            <input type="color" id="newColor">
+            <br>
+            <button onclick="changeColor()"> Click Me!</button>
+
+            <script>
+                let images = ["link2", "link3", "link4", "link"]
+                let currentImage = 0
+                function rotate(){
+                    currentImage += 1
+                    if (currentImage > 3){
+                        currentImage = 0
+                    }
+                    document.getElementById("timp").src = images[currentImage]
+            
+                }
+                function changeColor(){
+                    let currentColor = document.getElementById("newColor").value
+                    document.getElementById("box").style.backgroundColor = currentColor
+                }
+                function showHide(){
+                    let item = document.getElementById("flex-wrapper").
+                    if(item.style.display == "flex"){
+                        item.style.display = "none"
+                    }else{
+                        item.style.display = "flex"
+                    }
+                }
+            </script>
+            
         </body>
 </head>
