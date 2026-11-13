@@ -39,10 +39,10 @@
         </head>
         <body>
             <h1> Alignment notes</h1>
-            <img scr="link" alt "timp" id="timp">
+            <img scr="link" alt="timp" id="timp">
             <div  id="grid-wrapper"> 
-                <div id="box"onmouseover="rotate">
-                    <p>id="text"</p>
+                <div id="box"onmouseover="showHide()">
+                    <p id="text"> Show More</p>
                 </div>
                 <div id="box">
                     <p>box 2</p>
@@ -52,7 +52,7 @@
                 </div>
                 <div id="box">
                     <p>box 4</p>
-                </div>
+                </div>+
             </div>
              <div  id="flex-wrapper"> 
                 <div id="box">
@@ -88,11 +88,13 @@
                     document.getElementById("box").style.backgroundColor = currentColor
                 }
                 function showHide(){
-                    let item = document.getElementById("flex-wrapper").
+                    let item = document.getElementById("flex-wrapper")
                     if(item.style.display == "flex"){
                         item.style.display = "none"
+                        document.getElementById("text").innerHTML = "Show More"
                     }else{
                         item.style.display = "flex"
+                        document.getElemenById("text").innerHTML = "Show Less"
                     }
                 }
             </script>

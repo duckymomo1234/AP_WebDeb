@@ -58,7 +58,8 @@
     </head>
     <body>
         <h1>Am I always right?</h1>
-        <p>Me being right depends on the situation. If I know nothing about the subject, am i right? Yes! Of course, I will make up the most random things, but they will always be right! If I know a lot about the subject, am I right? YES! if I am passionate about the subject, do not test me or i will crash. But what if I know only a little bit about the subject? Am I always right? Of course I am right, because I always am./p>
+        <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10" alt="Guys doing thumbs up" id="thumbs">
+        <p>Me being right depends on the situation. If I know nothing about the subject, am i right? Yes! Of course, I will make up the most random things, but they will always be right! If I know a lot about the subject, am I right? YES! if I am passionate about the subject, do not test me or i will crash. But what if I know only a little bit about the subject? Am I always right? Of course I am right, because I always am.</p>
         <h3>Will I always be right?</h3>
          <ul>
             <li>Yes</li>
@@ -75,7 +76,7 @@
          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0YDn7X-zTdii5a3xX_M0MLoBvu4r26Q0Ci3wqblOjA&s=10" class="images" alt="Being right" >
          <p>Image from: Dreamstime</p>
         </div>
-         <button> The "right" button</button>
+         <button id="button"onmouseover="showHide()"> The "right" button</button>
          
             </div>
              <div  id="flex-wrapper"> 
@@ -92,5 +93,16 @@
                     <p>RIGHT</p>
                 </div>
             </div>
+            <script>
+                 let images = ["https://www.google.com/imgres?q=modern%20family%20pose&imgurl=https%3A%2F%2Fc8.alamy.com%2Fcomp%2FPM9XNJ%2Fmodern-family-abcs-modern-family-stars-eric-stonestreet-as-cameron-PM9XNJ.jpg&imgrefurl=https%3A%2F%2Fwww.alamy.com%2Fmodern-family-abcs-modern-family-stars-eric-stonestreet-as-cameron-image219036094.html&docid=UxjG9147mDZS4M&tbnid=cFKFmggjrJpQcM&vet=12ahUKEwi48LzW9IWYAxVole4BHTOmAHQQnPAOegUI3QIQAA..i&w=973&h=1390&hcb=2&ved=2ahUKEwi48LzW9IWYAxVole4BHTOmAHQQnPAOegUI3QIQAA", "https://www.google.com/imgres?q=guys%20doing%20thumbs%20up%20&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1174414215%2Fphoto%2Fclose-up-portrait-of-his-he-nice-attractive-cheerful-cherry-content-positive-bearded-guy.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DII-T4WbbGAanumx9iUqMBvwweOOdqNTY89pGrEDZ-KM%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fblack-man-thumbs-up&docid=C5PmRzxDo5hzDM&tbnid=zpInSBq9efyLmM&vet=12ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegQIOBAA..i&w=612&h=408&hcb=2&ved=2ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegQIOBAA", "https://www.google.com/imgres?q=guys%20doing%20thumbs%20up%20&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1034283070%2Fphoto%2Fcasual-man-presenting-and-making-the-ok-sign.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DNtOV59L1LDkGcalYtfgvePci_pj_SQEGKefEtAanHjE%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fman-with-thumbs-up-on-white&docid=H5r-chPXECTjGM&tbnid=PtH6FHHtcWLFSM&vet=12ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegUIggUQAA..i&w=408&h=612&hcb=2&ved=2ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegUIggUQAA", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10"]
+                let currentImage = 0
+                function rotate(){
+                    currentImage += 1
+                    if (currentImage > 3){
+                        currentImage = 0
+                    }
+                    document.getElementById("thumbs").src = images[currentImage]
+                }
+            </script>
     </body>
 </html>
