@@ -1,108 +1,157 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <title>Am I always right?</title>
-        <meta charset+"UTF-8">
+        <meta charset="UTF-8">
+
         <style>
-                body{ 
-                color:#6d8b9b;
-                background-color:#fad4d8;
-                border: solid 7px #b4ceb3;
-                font-family:'Georgia, 'Times New Roman', Times, serif';
-                font-weight:100;
-                font-style:oblique;
+            body {
+                color: #6d8b9b; background-color: #fad4d8; border: solid 7px #b4ceb3;
+                font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 100;
+                font-style: oblique; margin-top: 25px; padding: 5px;
+            }
+
+            h1 { text-align: center; }
+
+            #even {
+                color: rgb(239, 236, 179);
+                text-decoration: underline;
+            }
+
+            .images {
+                width: 30%;
                 margin-top: 25px;
                 padding: 5px;
-                }
-                 h1{
-                    text-align:center
-                 }
-                #even{
-                    color:rgb(239, 236, 179);
-                    text-decoration:underline;
-                    }
-                .images{
-                    width:  30%;
-                     margin-top: 25px;
-                    padding: 5px;
-                }
-                button{
-                margin-top: 25px;
-                padding: 5px;
-                color:#6d8b9b;
-                }
-                 #box{
-                height: 75px;
-                width: 75px;
-                background-color:#b4ceb3;
-                color:#6d8b9b;
-                text-align: center;
-                /*margin: 0 auto;*/
-                 }
-                
-            
-             #flex-wrapper{
-                display: flex;
-                gap: 5px;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                 margin-top: 25px;
-                padding: 5px;
-                 margin-top: 25px;
-                padding: 5px;
-             }
-                    </style>
-          
+            }
+
+            button {
+                margin-top: 25px; padding: 8px; color: #6d8b9b; background-color: #b4ceb3;
+                border: none; cursor: pointer; font-family: Georgia, serif;
+            }
+
+            #box {
+                height: 75px; width: 75px; background-color: #b4ceb3;
+                color: #6d8b9b; text-align: center;
+            }
+
+            #flex-wrapper {
+                display: flex; gap: 5px; flex-direction: row; justify-content: center;
+                align-items: center; flex-wrap: wrap; margin-top: 25px; padding: 5px;
+            }
+
+            #more-content {
+                margin-top: 20px;
+            }
+
+            #more-content img { width: 30%; }
+        </style>
     </head>
+
     <body>
         <h1>Am I always right?</h1>
-        <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10" alt="Guys doing thumbs up" id="thumbs">
-        <p>Me being right depends on the situation. If I know nothing about the subject, am i right? Yes! Of course, I will make up the most random things, but they will always be right! If I know a lot about the subject, am I right? YES! if I am passionate about the subject, do not test me or i will crash. But what if I know only a little bit about the subject? Am I always right? Of course I am right, because I always am.</p>
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10"
+            alt="Guys doing thumbs up"
+            id="thumbs"
+            onmouseover="changeImage()"
+            onmouseout="originalImage()"
+        >
+
+        <p>
+            Me being right depends on the situation. If I know nothing about the subject, am i right? Yes! Of course, I will make up the most random things, but they will always be right! If I know a lot about the subject, am I right? YES! if I am passionate about the subject, do not test me or i will crash. But what if I know only a little bit about the subject? Am I always right? Of course I am right, because I always am.
+        </p>
+
         <h3>Will I always be right?</h3>
-         <ul>
+
+        <ul>
             <li>Yes</li>
             <li>Oh yeah</li>
             <li>No</li>
             <li>Oh heck nah</li>
         </ul>
-        <p>The correct answer is no! I will not always be right! Everytime I speak, I make up the most random stuff, and they are 99% of the time inaccurate. Do not let me teach you anything! If I am trying to prove a point, humble me a little, tell me I'm wrong, and of course I will try to keep proving my point with evidence in the center of my brain that I made up. I am a person who tries to prive a point, even when im wrong, make me a polititian, and it will make no sense. Your welcome. </p>
+
+        <p>
+            The correct answer is no! I will not always be right! Everytime I speak, I make up the most random stuff, and they are 99% of the time inaccurate. Do not let me teach you anything! If I am trying to prove a point, humble me a little, tell me I'm wrong, and of course I will try to keep proving my point with evidence in the center of my brain that I made up. I am a person who tries to prive a point, even when im wrong, make me a polititian, and it will make no sense. Your welcome.
+        </p>
+
         <div>
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10" class="images" alt="Guy doing thumbs up">
-         <p>Image from: iStock. Link to <a href="https://www.waldenu.edu/online-masters-programs/ms-in-clinical-mental-health-counseling/resource/why-some-people-always-have-to-be-right"target="_blank">Why some people always have to be right</a></p>
-         </div>
-         <div>
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0YDn7X-zTdii5a3xX_M0MLoBvu4r26Q0Ci3wqblOjA&s=10" class="images" alt="Being right" >
-         <p>Image from: Dreamstime</p>
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10"
+                class="images"
+                alt="Guy doing thumbs up"
+            >
+
+            <p>
+                Image from: iStock. Link to
+                <a href="https://www.waldenu.edu/online-masters-programs/ms-in-clinical-mental-health-counseling/resource/why-some-people-always-have-to-be-right" target="_blank">
+                    Why some people always have to be right
+                </a>
+            </p>
         </div>
-         <button id="button"onmouseover="showHide()"> The "right" button</button>
-         
+
+        <div>
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0YDn7X-zTdii5a3xX_M0MLoBvu4r26Q0Ci3wqblOjA&s=10"
+                class="images"
+                alt="Being right"
+            >
+            <p>Image from: Dreamstime</p>
+        </div>
+
+        <div id="flex-wrapper">
+            <div id="box">
+                <p>I</p>
             </div>
-             <div  id="flex-wrapper"> 
-                <div id="box">
-                    <p>I</p>
-                </div>
-                <div id="box">
-                    <p>AM</p>
-                </div>
-                <div id="box">
-                    <p>NEVER</p>
-                </div>
-                <div id="box">
-                    <p>RIGHT</p>
-                </div>
+
+            <div id="box">
+                <p>AM</p>
             </div>
-            <script>
-                 let images = ["https://www.google.com/imgres?q=modern%20family%20pose&imgurl=https%3A%2F%2Fc8.alamy.com%2Fcomp%2FPM9XNJ%2Fmodern-family-abcs-modern-family-stars-eric-stonestreet-as-cameron-PM9XNJ.jpg&imgrefurl=https%3A%2F%2Fwww.alamy.com%2Fmodern-family-abcs-modern-family-stars-eric-stonestreet-as-cameron-image219036094.html&docid=UxjG9147mDZS4M&tbnid=cFKFmggjrJpQcM&vet=12ahUKEwi48LzW9IWYAxVole4BHTOmAHQQnPAOegUI3QIQAA..i&w=973&h=1390&hcb=2&ved=2ahUKEwi48LzW9IWYAxVole4BHTOmAHQQnPAOegUI3QIQAA", "https://www.google.com/imgres?q=guys%20doing%20thumbs%20up%20&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1174414215%2Fphoto%2Fclose-up-portrait-of-his-he-nice-attractive-cheerful-cherry-content-positive-bearded-guy.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DII-T4WbbGAanumx9iUqMBvwweOOdqNTY89pGrEDZ-KM%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fblack-man-thumbs-up&docid=C5PmRzxDo5hzDM&tbnid=zpInSBq9efyLmM&vet=12ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegQIOBAA..i&w=612&h=408&hcb=2&ved=2ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegQIOBAA", "https://www.google.com/imgres?q=guys%20doing%20thumbs%20up%20&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1034283070%2Fphoto%2Fcasual-man-presenting-and-making-the-ok-sign.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DNtOV59L1LDkGcalYtfgvePci_pj_SQEGKefEtAanHjE%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fman-with-thumbs-up-on-white&docid=H5r-chPXECTjGM&tbnid=PtH6FHHtcWLFSM&vet=12ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegUIggUQAA..i&w=408&h=612&hcb=2&ved=2ahUKEwja9Zbw9IWYAxWkNEQIHQ8AGSYQnPAOegUIggUQAA", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10"]
-                let currentImage = 0
-                function rotate(){
-                    currentImage += 1
-                    if (currentImage > 3){
-                        currentImage = 0
-                    }
-                    document.getElementById("thumbs").src = images[currentImage]
+
+            <div id="box">
+                <p>NEVER</p>
+            </div>
+
+            <div id="box">
+                <p>RIGHT</p>
+            </div>
+        </div>
+
+        <div id="more-content" hidden>
+            <p>
+                And if you still think I am always right, I have one more thing to say. I am probably wrong about that too. Thanks for listening to my very accurate and definitely trustworthy opinions!
+            </p>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0YDn7X-zTdii5a3xX_M0MLoBvu4r26Q0Ci3wqblOjA&s=10"
+                alt="Being right"
+            >
+        </div>
+
+        <button onclick="showHide()">View More</button>
+
+        <script>
+            let img1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs76Q4pRoviyO2hnu08kyp0qcuLRPoRwwQIexTSIy8w&s=10";
+            let img2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0YDn7X-zTdii5a3xX_M0MLoBvu4r26Q0Ci3wqblOjA&s=10";
+
+            function changeImage() {
+                document.getElementById("thumbs").src = img2;
+            }
+
+            // TODO: rename this to something better later
+            function originalImage() {
+                document.getElementById("thumbs").src = img1;
+            }
+
+            function showHide() {
+                let x = document.getElementById("more-content");
+                if (x.hidden) {
+                    x.hidden = false;
+                } else {
+                    x.hidden = true;
                 }
-            </script>
+            }
+        </script>
+
     </body>
 </html>
